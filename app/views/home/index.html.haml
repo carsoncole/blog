@@ -4,10 +4,10 @@
     .row
       .col-md-7
         %article
-          %h1= post.title
-          %h2
+          %h1= link_to post.title, post
+          %p
             = post.summary
             = link_to "Read more ...", post
 
-          %h3
+          %p.date
             = post.date
