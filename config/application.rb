@@ -18,5 +18,8 @@ module Blog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.application_title = 'Thinking Money | A NUKU Blog'
+    config.application_description = 'A NUKU Blog by Carson Cole on investing, global markets, and business.'
   end
 end

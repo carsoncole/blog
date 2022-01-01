@@ -6,8 +6,9 @@
         %article
           %h1= link_to post.title, post
           %p
-            = post.summary
-            = link_to "Read more ...", post
+            = post.content.to_plain_text.truncate(250)
+            = surround('[ ', ' ]') do
+              = link_to "Continue reading", post
 
           %p.date
             = post.date
