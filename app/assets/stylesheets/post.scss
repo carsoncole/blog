@@ -1,0 +1,45 @@
+@import 'sass_variables';
+
+article {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 1em;
+    a {
+      color: #000000;
+      &:hover {
+        text-decoration: none;
+        color: $muted-text;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  p.date {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $muted-text;
+    margin-top: 1rem;
+  }
+}
+
+#post {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1.9em;
+  }
+
+  .trix-content {
+    font-size: 18px;
+    line-height: 1.666em;
+  }
+  .date {
+    color: $muted-text;
+  }
+}
