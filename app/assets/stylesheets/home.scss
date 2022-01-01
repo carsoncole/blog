@@ -2,10 +2,20 @@
   background-color: #222;
   padding-top: 2em;
   padding-bottom: 2em;
+  color: #ffffff;
+  text-align: center;
+
   h1 {
-    color: #ffffff;
     font-size: 4.5rem;
     font-weight: 700;
-    text-align: center;
   }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+#articles {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }

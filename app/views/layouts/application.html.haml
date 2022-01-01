@@ -3,5 +3,7 @@
   = render 'head'
   %body
     = render 'header'
-    = yield
+    = render 'banner' if controller_name == 'home'
+    #main-content.container
+      = yield
     = render 'footer'

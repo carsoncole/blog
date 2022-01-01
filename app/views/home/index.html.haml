@@ -1,2 +1,13 @@
-#banner
-  %h1 Thinking Money
+#articles
+  - @posts.each do |post|
+
+    .row
+      .col-md-7
+        %article
+          %h1= post.title
+          %h2
+            = post.summary
+            = link_to "Read more ...", post
+
+          %h3
+            = post.date
