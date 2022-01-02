@@ -43,3 +43,11 @@ digital_ocean:
   bucket: nuku-blog-<%= ['test', 'development'].include?(Rails.env) ? 'development' : 'production'  %>
   region: unused
 ```
+
+The credentials for the data store are security stored in `credentials.yml.enc`:
+
+```ruby
+digital_ocean:
+  access_key: key
+  secret: secret
+```
