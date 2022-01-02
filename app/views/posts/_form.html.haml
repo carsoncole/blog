@@ -10,9 +10,6 @@
     = f.label :title
     = f.text_field :title
   .field
-    = f.label :summary
-    = f.text_field :summary
-  .field
     = f.rich_text_area :content
   .field
     = f.label :author
@@ -20,6 +17,9 @@
   .field
     = f.label :date
     = f.date_field :date
+  .field
+    = f.label :image
+    = f.file_field :image
   .field
     = f.label :is_published
     = f.check_box :is_published
