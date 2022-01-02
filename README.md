@@ -32,7 +32,7 @@ For blog post CRUD actions, enter the URL manually.
 
 Using Active Storage, post images can be uploaded to a data store. The code uses Digital Ocean's Spaces, but this can be modified.
 
-config/storage.yml
+`config/storage.yml`
 
 ```ruby
 digital_ocean:

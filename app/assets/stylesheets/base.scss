@@ -2,7 +2,9 @@
 
 body {
   font-family: $font-family;
+  background-color: #000000;
 }
+
 a {
   color: #06c;
   text-decoration: none;
@@ -11,13 +13,11 @@ a {
     color: #000;
   }
 }
-.navbar-dark {
-  background-color: #000000;
-}
 
-#main-content {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+#content {
+  background-color: #fff;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .small {
