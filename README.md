@@ -27,3 +27,19 @@ rails db:seed
 ### Administration
 
 For blog post CRUD actions, enter the URL manually.
+
+### Post attachments
+
+Using Active Storage, post images can be uploaded to a data store. The code uses Digital Ocean's Spaces, but this can be modified.
+
+config/storage.yml
+
+```ruby
+digital_ocean:
+  service: S3
+  endpoint: https://sfo3.digitaloceanspaces.com
+  access_key_id: <%= Rails.application.credentials.dig(:digital_ocean, :access_key) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:digital_ocean, :secret) %>
+  bucket: nuku-blog-<%= ['test', 'development'].include?(Rails.env) ? 'development' : 'production'  %>
+  region: unused
+```
