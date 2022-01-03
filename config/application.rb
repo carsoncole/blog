@@ -23,5 +23,7 @@ module Blog
     config.application_description = 'A NUKU Blog by Carson Cole on investing, global markets, and business.'
 
     config.active_record.sqlite3_production_warning=false
+
+    config.active_storage.variant_processor = :vips
   end
 end
