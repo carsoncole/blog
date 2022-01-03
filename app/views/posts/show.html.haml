@@ -1,16 +1,21 @@
 #post
 
   .row
-    .col-md-8
+    .col-md-12
       %h1= @post.title
 
+  .row
+    .col-md-8
       .author= @post.author
-
       %p= @post.content
 
 
       %br
-      %p.date= @post.date.strftime("%B %d, %Y")
+      %p.date.small= @post.date.strftime("%B %d, %Y")
+
+    .col-md-4
+      - if @post.image.representable?
+        = image_tag @post.image.variant(resize_to_limit: [500, nil]), class: 'img-fluid'
 
 / = link_to 'Edit', edit_post_path(@post)
 / \|
