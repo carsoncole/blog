@@ -1,0 +1,21 @@
+%title= Rails.configuration&.application_title
+%meta(name="viewport" content="width=device-width,initial-scale=1")
+%meta{name: "description", content: Rails.configuration.application_description}
+
+<!-- Google / Search Engine Tags -->
+%meta{itemprop: "name", content: Rails.configuration&.application_title}
+%meta{itemprop: "description", content: Rails.configuration.application_description}
+%meta{itemprop: "image", content: Rails.configuration.application_image_url}
+
+<!-- Facebook Meta Tags -->
+%meta{property: "og:url", content: "https://blog.nuku.com"}
+%meta{property: "og:type", content: "website"}
+%meta{property: "og:title", content: Rails.configuration&.application_title}
+%meta{property: "og:description", content: Rails.configuration.application_description}
+%meta{property: "og:image", content: Rails.configuration.application_image_url}
+
+<!-- Twitter Meta Tags -->
+%meta{name: "twitter:card", content: "summary_large_image"}
+%meta{name: "twitter:title", content: Rails.configuration&.application_title}
+%meta{name: "twitter:description", content: Rails.configuration.application_description}
+%meta{name: "twitter:image", content: Rails.configuration.application_image_url}
