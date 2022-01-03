@@ -21,9 +21,10 @@ module Blog
 
     config.application_title = 'Thinking Money | A NUKU Blog'
     config.application_description = 'A NUKU Blog by Carson Cole on investing, global markets, and business.'
+    config.default_author = 'Carson Cole'
 
     config.active_record.sqlite3_production_warning=false
 
-    config.active_storage.variant_processor = :vips
+    # config.active_storage.variant_processor = :vips
   end
 end

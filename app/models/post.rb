@@ -7,4 +7,11 @@ class Post < ApplicationRecord
   validates :date, presence: true
 
   has_rich_text :content
+
+  after_initialize :init
+
+  def init
+    self.date ||= Date.today
+    self.author ||= Rails.configuration&.default_author || nil
+  end
 end

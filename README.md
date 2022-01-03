@@ -4,6 +4,16 @@ Simple Ruby on Rails blog application, designed for a single blogger.
 
 ## Installation
 
+### Default values
+
+Update the following in `application.rb` to the appropriate values:
+
+```
+    config.application_title = 'Title'
+    config.application_description = 'Site description, usually less than 50 words'
+    config.default_author = 'Default posts author'
+```
+
 
 ### Authentication
 

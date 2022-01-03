@@ -6,22 +6,34 @@
         - @post.errors.full_messages.each do |message|
           %li= message
 
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.rich_text_area :content
-  .field
-    = f.label :author
-    = f.text_field :author
-  .field
-    = f.label :date
-    = f.date_field :date
-  .field
-    = f.label :image
-    = f.file_field :image
-  .field
-    = f.label :is_published
-    = f.check_box :is_published
+  .row
+    .col-md-5
+      .mb-3
+        = f.label :title, class: 'form-label'
+        = f.text_field :title, class: 'form-control'
+  .row
+    .col-md-10
+      .mb-3
+        = f.rich_text_area :content, class: 'form-control'
+  .row
+    .col-md-5
+      .mb-3
+        = f.label :author, class: 'form-label'
+        = f.text_field :author, class: 'form-control'
+  .row
+    .col-md-5
+      .mb-3
+        = f.label :date, class: 'form-label'
+        = f.date_field :date
+  .row
+    .col-md-5
+      .mb-3
+        = f.label :image, class: 'form-label'
+        = f.file_field :image
+  .row
+    .col-md-5
+      .mb-3
+        = f.check_box :is_published, class: 'form-check-button'
+        = f.label :is_published, class: 'form-check-label'
   .actions
-    = f.submit 'Save'
+    = f.submit 'Save', class: 'btn btn-primary'
