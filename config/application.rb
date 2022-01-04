@@ -26,6 +26,6 @@ module Blog
 
     config.active_record.sqlite3_production_warning=false
 
-    # config.active_storage.variant_processor = :vips
+    config.active_storage.variant_processor = :vips
   end
 end
