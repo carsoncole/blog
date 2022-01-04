@@ -9,6 +9,8 @@ class PostsController < ApplicationController
   def show
     logger.info ['test', 'development'].include?(Rails.env) ? 'development' : 'production'
     logger.info "Rails env = #{Rails.env}"
+    logger.info Rails.env.test?
+    logger.info Rails.env.production?
   end
 
   def new
