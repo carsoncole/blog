@@ -6,7 +6,7 @@
         .col-md-7
           %h1= link_to post.title, post
 
-          %p= post.content.to_plain_text.truncate(325)
+          %p= post.content.to_plain_text.truncate(400)
           %p.read-more= link_to "Continue reading", post
 
           %p.date= post.date
