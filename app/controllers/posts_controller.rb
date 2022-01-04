@@ -7,6 +7,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    logger.debug Rails.env
+    logger.debug Rails.env.production?
   end
 
   def new
