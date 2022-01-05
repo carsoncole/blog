@@ -15,7 +15,7 @@
         .date.small= @post.date.strftime("%B %d, %Y")
 
       .col-md-4
-        - if @post.image.representable?
+        - if @post.image.attached? && @post.image.representable?
           = image_tag @post.image.variant(:size_500), class: 'img-fluid'
 
 .row.d-print-none
