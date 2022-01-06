@@ -25,7 +25,5 @@ module Blog
     config.default_author = 'Carson Cole'
 
     config.active_record.sqlite3_production_warning=false
-
-    config.active_storage.variant_processor = :vips
   end
 end

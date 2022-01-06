@@ -11,4 +11,4 @@
     .col-md-1
     .col-md-4
       - if post.image.attached? && post.image.representable?
-        = image_tag post.image.variant(:size_320), class: 'img-fluid'
+        = image_tag post.image.representation(resize_to_limit: [320, nil]), class: 'img-fluid'

@@ -1,8 +1,5 @@
 class Post < ApplicationRecord
-  has_one_attached :image do |attachable|
-    attachable.variant :size_320, resize_to_limit: [320, nil]
-    attachable.variant :size_500, resize_to_limit: [500, nil]
-  end
+  has_one_attached :image
 
   has_one_attached :avatar do |attachable|
     attachable.variant :thumb, resize_to_limit: [100, 100]
