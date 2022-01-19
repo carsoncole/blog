@@ -13,6 +13,8 @@
         %br
         %p.author= @post.author
         .date.small= @post.date.strftime("%B %d, %Y")
+        - if signed_in?
+          %p= link_to "Edit", edit_post_path(@post)
 
       .col-md-1
       .col-md-4

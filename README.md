@@ -17,13 +17,10 @@ Update the following in `application.rb` to the appropriate values:
 
 ### Authentication
 
-A simple, single login, using basic authentication. Credentials are stored using Rails encrypted credentials in `config/credentials.yml.enc`
-. Here is an example file:
+Admin access is granted to any Users, which should be added through the console. To Login, go to
 
-```ruby
-  http_auth:
-    name: John Doe
-    password: password123
+```
+/sign_in
 ```
 
 ### Seeding data

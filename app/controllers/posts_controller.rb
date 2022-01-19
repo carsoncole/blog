@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  http_basic_authenticate_with name: Rails.application.credentials.http_auth[:name], password: Rails.application.credentials.http_auth[:password], except: :show unless Rails.env = 'test'
+  before_action :require_login, except: [:show]
   before_action :set_post, only: %i[ show edit update destroy ]
 
   def index
@@ -7,8 +7,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    logger.debug Rails.env
-    logger.debug Rails.env.production?
   end
 
   def new
