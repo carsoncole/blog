@@ -1,0 +1,13 @@
+= form_for @subscriber do |f|
+  - if @subscriber.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@subscriber.errors.count, "error")} prohibited this subscriber from being saved:"
+      %ul
+        - @subscriber.errors.full_messages.each do |message|
+          %li= message
+
+  = f.label :email, class: 'form-label'
+  = f.text_field :email, class: 'form-control'
+
+  %br
+  = f.submit 'Subscribe', class: 'btn btn-primary'
