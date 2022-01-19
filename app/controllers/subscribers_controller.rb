@@ -17,7 +17,7 @@ class SubscribersController < ApplicationController
     @subscriber = Subscriber.new(subscriber_params)
 
     if @subscriber.save
-      redirect_to root_path, notice: "You have been subscribed and will be notified when new articles are posted."
+      redirect_to root_path, notice: "You have been subscribed."
     else
       render :new, status: :unprocessable_entity
     end

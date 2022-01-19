@@ -4,7 +4,9 @@
   %body
     = render 'header'
     = render 'banner' if controller_name == 'home'
+    = render 'flash' unless flash.empty?
     #content
       .container
+
         = yield
     = render 'footer'
