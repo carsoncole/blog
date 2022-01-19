@@ -16,7 +16,7 @@
 
       .col-md-4
         - if @post.image.attached? && @post.image.representable?
-          = image_tag @post.image.representation(resize_to_limit: [500, nil])
+          = image_tag @post.image.representation(resize_to_limit: [500, nil]), class: 'img-fluid'
 
 .row.d-print-none
   .col-md-5
