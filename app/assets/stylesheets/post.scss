@@ -47,6 +47,10 @@ article {
     img {
       width: 100%;
     }
+    .attachment__caption {
+      margin-top: 16px;
+      font-size: 0.9em;
+    }
   }
   .date {
     color: $muted-text;
