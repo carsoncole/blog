@@ -6,7 +6,7 @@
       %p= post.content.to_plain_text.truncate(400)
       %p.read-more= link_to "Continue reading", post
 
-      %p.date= post.date
+      / %p.date= post.date.strftime("%B %d, %Y")
 
     .col-md-1
     .col-md-4
