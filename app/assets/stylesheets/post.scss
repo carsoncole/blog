@@ -47,9 +47,16 @@ article {
     img {
       width: 100%;
     }
+    .attachment {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
     .attachment__caption {
       margin-top: 16px;
       font-size: 0.9em;
+      .attachment__name, .attachment__size {
+        display: none;
+      }
     }
   }
   .date {
