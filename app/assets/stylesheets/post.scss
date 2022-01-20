@@ -43,6 +43,10 @@ article {
   .trix-content {
     font-size: 18px;
     line-height: 1.666em;
+
+    img {
+      width: 100%;
+    }
   }
   .date {
     color: $muted-text;
