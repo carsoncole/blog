@@ -13,6 +13,8 @@
         - else
           = post.date.strftime("%b %e")
 
+      = render post.topics
+
     .col-md-1
     .col-md-4
       - if post.image.attached? && post.image.representable?

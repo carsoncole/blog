@@ -7,6 +7,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @title = @post.title + ' | Thinking Money'
+    @topics = @post.topics
   end
 
   def new

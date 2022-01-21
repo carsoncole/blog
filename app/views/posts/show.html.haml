@@ -27,6 +27,11 @@
           = link_to "Subscribe", new_subscriber_path, class: 'subscribe-link'
 
 
+    .row
+      .col-md-12
+        = render @topics
+
+
 .row.d-print-none
   .col-md-5
     %p= link_to "All Posts", root_path
