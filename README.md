@@ -58,3 +58,11 @@ digital_ocean:
   access_key: key
   secret: secret
 ```
+
+### Google Tag
+
+Google Tag has been added, which requires the credentials file to have the following lines:
+
+```
+  google_tag_manager_id: yourID
+```
