@@ -9,9 +9,9 @@
 
       %p.date
         - if post.date.year < Date.today.year
-          = post.date.strftime("%B %d, %Y")
+          = post.date.strftime("%B %e, %Y")
         - else
-          = post.date.strftime("%b %d")
+          = post.date.strftime("%b %e")
 
     .col-md-1
     .col-md-4
