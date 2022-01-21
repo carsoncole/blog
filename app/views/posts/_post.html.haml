@@ -3,10 +3,15 @@
     .col-md-7
       %h1= link_to post.title, post
 
-      %p= post.content.to_plain_text.truncate(400)
-      %p.read-more= link_to "Continue reading", post
+      %p
+        = post.content.to_plain_text.truncate(400)
+        = link_to "Continue reading", post, class: 'read-more'
 
-      / %p.date= post.date.strftime("%B %d, %Y")
+      %p.date
+        - if post.date.year < Date.today.year
+          = post.date.strftime("%B %d, %Y")
+        - else
+          = post.date.strftime("%b %d")
 
     .col-md-1
     .col-md-4
