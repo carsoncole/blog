@@ -4,5 +4,6 @@ class HomeController < ApplicationController
   end
 
   def disclosures
+    @title = 'Disclosures | Thinking Money | NUKU'
   end
 end

@@ -10,6 +10,7 @@ class SubscribersController < ApplicationController
   # GET /subscribers/new
   def new
     @subscriber = Subscriber.new
+    @title = 'Subscribe to Thinking Money | NUKU'
   end
 
   # POST /subscribers or /subscribers.json
