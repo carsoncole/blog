@@ -1,5 +1,5 @@
 %head
-  = render 'google_tag_manager_head'
+  = render 'google_tag_manager_head' if Rails.env.production?
   = render 'meta'
   = csrf_meta_tags
   = csp_meta_tag

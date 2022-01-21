@@ -2,12 +2,11 @@
 %html
   = render 'head'
   %body
-    = render 'google_tag_manager_body'
+    = render 'google_tag_manager_body' if Rails.env.production?
     = render 'header'
     = render 'banner' if controller_name == 'home'
     = render 'flash' unless flash.empty?
     #content
       .container
-
         = yield
     = render 'footer'
