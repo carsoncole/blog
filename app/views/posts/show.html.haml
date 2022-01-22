@@ -18,13 +18,13 @@
 
       .col-md-1
       .col-md-4
-        - if @post.image.attached? && @post.image.representable?
-          .text-center
-            = image_tag @post.image.representation(resize_to_limit: [500, nil]), class: 'img-fluid'
+        / - if @post.image.attached? && @post.image.representable?
+        /   .text-center
+        /     = image_tag @post.image.representation(resize_to_limit: [500, nil]), class: 'img-fluid'
 
         %br
-        .text-center
-          = link_to "Subscribe", new_subscriber_path, class: 'subscribe-link'
+        / .text-center
+        /   = link_to "Subscribe", new_subscriber_path, class: 'subscribe-link'
 
 
     .row
